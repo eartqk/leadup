@@ -1,0 +1,14 @@
+.picture-box {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  padding-bottom: 2em;
+}
+
+.picture-box a {
+  margin-top: 2em;
+  max-width: 500px;
+}
