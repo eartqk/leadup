@@ -3,6 +3,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.core.validators import RegexValidator
 # Create your models here.
 
+
 class Application(models.Model):
     name = models.CharField(max_length=64, null=True)
     # phone_regex = RegexValidator(regex=r'^\+?7?\d{10}$')
