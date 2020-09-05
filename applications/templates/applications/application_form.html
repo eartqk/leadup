@@ -2,20 +2,20 @@
 {% block content%}
 
 <br>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <h1 class="mt-2">Заполните заявку и мы свяжемся с Вами. Это бесплатно :)</h1>
-        <hr class="mt-0 mb-4">
-        {% load crispy_forms_tags %}
-        <form action="" method="POST">
-          {% csrf_token %}
-            {{form|crispy}}
-            <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и их защиту <a href="{% url 'policy' %}">политикой конфиденциальности.</a></p>
-            <input class="btn btn-success" type="submit" name="Submit" value="Отправить заявку">
-        </form>
-      </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <h1 class="mt-2">Заполните заявку и мы свяжемся с Вами. Это бесплатно :)</h1>
+      <hr class="mt-0 mb-4">
+      {% load crispy_forms_tags %}
+      <form action="" method="POST">
+        {% csrf_token %}
+        {{form|crispy}}
+        <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и их защиту <a href="{% url 'policy' %}">политикой конфиденциальности.</a></p>
+        <input class="btn btn-success" type="submit" name="Submit" value="Отправить заявку">
+      </form>
     </div>
   </div>
+</div>
 
 {% endblock %}
